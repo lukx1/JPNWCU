@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Vstupenky</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<h3>
+				<a href="atrakce.html">Atrakce</a>|
+				<a href="cenik.html">Cenik</a>|
+				<a href="vstupenky.html">Koupit vstupenku</a>|
+				<a href="kontakt.html">Kontakt</a>
+			</h3>
+		</nav>
+		<br>
+		<img src="logo-praha.png" alt="Logo Zirafa">
+		<br>
+		<h2>Zakoupit vstupenku</h2>
+	</header>
+	<br>
+	<main>
+		<form action="odeslatVstupenku.php">
+			<fieldset>
+				<legend>Vstupenka</legend>
+				<table>
+					<tr>
+					<td>
+						<label for="1">Dětská</label>
+					</td>
+					<td>
+						<select name="dvs" id="1">
+							<option value="0">0 ks</option>
+							<option value="1">1 ks</option>
+							<option value="2">2 ks</option>
+							<option value="3">3 ks</option>
+							<option value="4">4 ks</option>
+							<option value="5">5 ks</option>
+							<option value="6">6 ks</option>
+							<option value="7">7 ks</option>
+						</select>
+					</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="2">Dospělí</label>
+						</td>
+						<td>
+							<select name="dsvs" id="2">
+								<option value="0">0 ks</option>
+								<option value="1">1 ks</option>
+								<option value="2">2 ks</option>
+								<option value="3">3 ks</option>
+								<option value="4">4 ks</option>
+								<option value="5">5 ks</option>
+								<option value="6">6 ks</option>
+								<option value="7">7 ks</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Kontaktní informace</legend>
+				
+				<table>
+					<tr>
+						<td><label for="p">Příjmení</label></td>
+						<td><input type="text" name="p" id="p" required></td>
+					</tr>
+					<tr>
+					<td><label for="j">Jméno</label></td>
+					<td><input type="text" name="j" id="j" required></td>
+					</tr>					
+					<tr>
+					<td><label for="e">Email</label></td>
+					<td><input value="@" type="email" name="e" id="e" required></td>
+					</tr>
+					<tr>
+					<td><label for="u">Ulice</label></td>
+					<td><input type="text" name="u" id="u" required></td>
+					</tr>					
+					<tr>
+					<td><label for="m">Město</label></td>
+					<td><input type="text" name="m" id="m" required></td>
+					</tr>					
+					<tr>
+					<td><label for="z">Země</label></td>
+					<td><input type="radio" checked name="z" id="z" required>ČR
+					<input type="radio" name="z" id="z2" required>SR</td>
+					</tr>					
+					<tr>
+					<td><label for="d">Datum</label></td>
+					<td><input type="date" name="d" id="d" required></td>
+					</tr>					
+					<tr>
+					<td><label for="f">Fotografie</label></td>
+					<td><input type="file" name="f" id="f"></td>
+					</tr>
+				</table>
+			</fieldset>
+			<br>
+			<input required type="checkbox" name="sh" id="sh"><label for="sh">Souhlasím s obchodními podmínkami</label>
+			<br>
+			<br>
+			<button type="submit">ODESLAT</button> | <button type="reset">RESET</button>
+			<br>
+			<br>
+		</form>
+	</main>
+	<hr>
+	<footer>
+	Funpark Žirafa, Obchodní 106, Čestlice<br>
+	<a href="mailto:info@funparkzirafa.cz">info@funparkzirafa.cz</a> <a href="mailto:oslavy@funparkzirafa.cz">oslavy@funparkzirafa.cz</a> <a href="mailto:zirafa@detaillo.cz">zirafa@detaillo.cz</a>
+	</footer>
+</body>
+</html>

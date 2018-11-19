@@ -1,0 +1,132 @@
+body {
+    color: #222;
+    font-family: Verdana, serif;
+    margin:0;
+}
+
+a {
+    color: #222;
+}
+
+header {
+    margin: 8px 8px 0px;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #4caf50;
+    background-color:#ffffff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin:8px;
+    grid-template-rows: auto;
+    grid-template-areas: "menu article";
+}
+
+main nav {
+    /*width: 20%;
+    float:left;*/
+    grid-area:menu;
+    padding: 20px 8px 0 0;
+    box-sizing: border-box;
+}
+
+main article {
+   /* width:80%;*/
+    grid-area:article;
+    float:right;
+}
+
+main nav a {
+    display:block;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 6px;
+    margin: 4px 0;
+    color: #222222;
+}
+
+main nav a:hover {
+    background: #fff;
+}
+
+footer {
+    position: absolute;
+    clear: both;
+    width:100%;
+    padding:8px;
+    margin: 0;
+    background-color:  #32aae7;
+    color:#fff;
+    text-align: center;
+}
+
+footer p {
+    font-size: 75%;
+}
+
+footer nav a {
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #32aae7;
+    background-color:#ffffff;
+}
+
+main article figure {
+    float:right;
+    text-align: center;
+}
+
+main article section img {
+    float:left;
+    margin-right: 14px;
+}
+
+main article section h3 {
+    margin:0;
+}
+
+main article section {
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    padding: 20px;
+    font-size: 80%;
+    border-radius: 10px;
+    clear:both;
+}
+
+main article section div {
+    clear:both;
+}
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PizzaShop</title>
+</head>
+<body>
+<h1>Pizza Shop 2.0</h1>
+<br>
+<form action="odeslat.php">
+    <fieldset>
+        <legend><b>Kontaktní údaje</b></legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="jmeno"><b>Jmeno</b></label>
+                </td>
+                <td>
+                    <input required placeholder="Zadejte sve jmeno" type="text" id="jmeno"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="adresa"><b>Adresa</b></label>
+                </td>
+                <td>
+                    <textarea required placeholder="Vase adresa" name="adresa" id="adresa" cols="30"
+                              rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="datum"><b>Datum doruceni</b></label>
+                </td>
+                <td>
+                    <input required type="date" id="datum"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefon"><b>Telefon</b></label>
+                </td>
+                <td>
+                    <input required type="tel" id="telefon"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email"><b>Email</b></label>
+                </td>
+                <td>
+                    <input required type="email" name="email" id="email">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend><b>Objednavka</b></legend>
+        <table>
+            <tr>
+                <td bgcolor="chucknorris">
+                    <label for="pizza"><b>Pizza</b></label>
+                </td>
+                <td></td>
+                <td>
+                    <select required name="pizza" id="pizza">
+                        <option selected disabled value=""> Vyberte pizzu</option>
+                        <optgroup label="Pizza O 32cm">
+                            <option value="0">MARGHERITA</option>
+                            <option value="1">VEGETARIANA</option>
+                            <option value="2">MARSALA</option>
+                            <option value="3">SPINACI</option>
+                            <option value="4">HAWAII</option>
+                        </optgroup>
+                        <optgroup label="Pizza O 46CM">
+                            <option value="5">MARGHERITA</option>
+                            <option value="6">VEGETARIANA</option>
+                            <option value="7">MARSALA</option>
+                            <option value="8">SPINACI</option>
+                            <option value="9">HAWAII</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td></td>
+                <td><label for="pocet">Pocet ks</label></td>
+                <td><input min="1" max="10" required type="number" id="pocet"> <br></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox" id="salam"><label for="salam">100g salam</label></td>
+                <td><input type="checkbox" id="mozzarela"><label for="mozzarela">100g mozzarela</label></td>
+                <td><input type="checkbox" id="slanina"><label for="slanina">100g slanina</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Příplatky na pizzu</b></td>
+                <td><input type="checkbox" id="par"><label for="par">50g parmazán</label></td>
+                <td><input type="checkbox" id="sunka"><label for="sunka">100g sunka</label></td>
+                <td><input type="checkbox" id="olivy"><label for="olivy">50g olivy</label></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox" id="vejce"><label for="vejce">1 vejce</label></td>
+            </tr>
+            <tr>
+                <td><b>Omáčka na pizzu</b></td>
+                <td></td>
+                <td><input checked type="radio" name="omacka" id="o1"><label for="o1">Tomatova</label></td>
+                <td><input type="radio" name="omacka" id="o2"><label for="o2">Smetanova</label></td>
+                <td><input type="radio" name="omacka" id="o3"><label for="o3">Paliva</label></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Platba</legend>
+        <table>
+            <tr>
+                <td>
+                    <input required type="radio" name="pl" id="o4"><label for="o4">Hotove pri privezeni</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="pl" id="o5"><label for="o5">Platebni kartou pri privezeni</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="pl" id="o6"><label for="o6">Online</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="pl" id="o7"><label for="o7">Stravenkou</label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Dalsi informace k objednavce</legend>
+        <textarea placeholder="Napiste nam dalsi informace nebo pozadavky" name="txar" id="txar" cols="30"
+                  rows="3"></textarea>
+    </fieldset>
+    <button type="submit">Odeslat objednavku</button>
+    <button type="reset">Zrusit objednavku</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,169 @@
+header {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(229,233,236);
+    font-family: Arial, serif;
+}
+
+#HlavniNadpis {
+    width: 100%;
+    text-align:center;
+}
+
+#Nabidka {
+    display: grid;
+    width: 100%;
+    background-color: rgb(160,35,65);
+    grid-template-columns: 1fr 1fr 1fr;
+    color:white;
+    font-size:80%;
+}
+
+#Nabidka div {
+    text-align: center;
+    padding: 0 16px 12px 16px;
+}
+
+main {
+    float:left;
+    width: 100%;
+    background-color: white;
+}
+
+#ColHolder {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+#ColHolder div {
+    text-align: center;
+}
+
+#ColHolder div img {
+    width: 100%;
+    height: 100%;
+}
+
+main h1 {
+    text-align: center;
+    font-size:250%;
+    display:inline-block;
+    width:100%;
+    color: rgb(46,28,185);
+}
+
+.NabidkaImgBox img {
+    margin-left:50%;
+    margin-right:50%;
+}
+
+.NabidkaImgBox {
+    height:auto;
+    width: 100%;
+}
+
+header div {
+    height: 100%;
+    float:right;
+    padding:12px;
+}
+
+header div a {
+    height:100%;
+    padding-left: 10px;
+    color:black;
+    text-decoration: none;
+}
+
+header img {
+    float:left;
+}
+
+#ONas {
+    padding: 20px 10px;
+    color: white;
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background: #A02341;
+}
+
+#ONasLevo {
+    float:left;
+    margin-right: 10px;
+}
+
+#ONasPravo h1 {
+    text-align: left;
+    margin: 4px 0 8px 0;
+    color:white;
+}
+
+#ONasPravo a{
+    color:white;
+    float:right;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top:10px;
+    background-color: #A02341;
+    display: block;
+    width:100%;
+    height: auto;
+    color:white;
+    float:left;
+}
+
+footer h1 {
+    color:white;
+    display: block;
+    text-align: center;
+}
+
+#FooterHolder {
+    padding: 0 32px 32px 32px;
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    float:left;
+}
+
+#FooterHolder h3 {
+    margin: 2px 0 6px 0;
+}
+
+#FooterHolder address a {
+    color:white;
+    text-decoration: none;
+}
+
+#FormCol input {
+    border: 0;
+    border-bottom: 2px solid white;
+    margin: 0 0 12px 0;
+    width:80%;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+#FormCol button {
+    border: 2px solid white;
+    background-color: transparent;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    font-size: 100%;
+}
+
+#FooterHolder nav a {
+    color:white;
+    margin-left: 12px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formy</title>
+</head>
+<body>
+<form action="odeslat.php" method="get">
+    <marquee behavior="" direction="">Property of <b>G</b><i>A</i><<b>N</b><i>G</i> <b>W</b><i>E</i><b>E</b><i>D</i></marquee>
+    <fieldset>
+        <legend>Přihlášení</legend>
+        <label for="jmeno">Nickname</label>
+        <input maxlength="12" id="jmeno" type="text" name="jmeno" placeholder="Nickname">
+        <label>
+            <input type="hidden" value="Herobrine" name="BadGuy" hidden>
+        </label>
+        <br>
+        <label for="neco">Heslo</label>
+        <input id="neco" name="heslo" type="password">
+        <br>
+        <input type="number" name="namba" min="0" max="420">
+        <br>
+        <input type="date" name="dejt" value="19-01-1888">
+        <br>
+        <input type="url" name="urrl" value="http://www.minecraft.net">
+        <br>
+        <input type="email" name="dejt" value="notch@minecraft.net">
+        <br>
+    </fieldset>
+    <fieldset>
+            <legend>Drsňárny</legend>
+
+        <label>
+            Přijatelné barvy
+            <input type="color" name="barva" readonly value="#FFFFFF">
+        </label>
+        <br>
+        <label>
+            Ano??????
+            <input name="ANO" checked type="checkbox">
+        </label>
+        <br>
+        Deportovat imigranty?
+        <br>
+        <label for="wowie1">Ano</label>
+        <input type="radio" value="Ano" checked name="wowie" id="wowie1">
+        <label for="wowie2">Určitě</label>
+        <input type="radio" value="Určitě" id="wowie2" name="wowie">
+        <label for="wowie3">Proč ne</label>
+        <input type="radio" value="Proč ne" id="wowie3" name="wowie">
+        <br>
+        <label>Selekt a fajl
+            <input type="file" accept="image/jpeg" name="Soubor" multiple>
+        </label>
+        <br>
+        <br>
+        <label for="toTedaJoM8">Proč je JoJo's Bizzare Adventrue nejlepší anime?</label>
+        <br>
+        <textarea name="TXA" id="toTedaJoM8" cols="30" rows="10">To je hard kvesčn</textarea>
+        <br>
+        <label for="VerzeSelekt">Verze Mince</label>
+        <select name="VerzeSelekt" id="VerzeSelekt">
+            <optgroup label="Release">
+                <option value="1.0.0">1.0.0</option>
+                <option value="1.1.0">1.1.0</option>
+                <option value="1.1.2">1.1.2</option>
+            </optgroup>
+            <optgroup label="Beta">
+                <option value="b0.9.2">Beta 0.9.2</option>
+                <option value="b0.9.3">Beta 0.9.3</option>
+                <option value="b0.9.4">Beta 0.9.4</option>
+                <option disabled value="b0.9.1">Beta 0.9.1</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="Kamosi">Vyber svoje kámoše</label>
+        <br>
+        <select size="2" multiple name="KamosiSelect" id="Kamosi">
+            <option value="1">HoneyDew</option>
+            <option value="2">Israphel</option>
+            <option value="3">Sips</option>
+            <option value="4">Duncan</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Vžum</legend>
+
+        <input type="submit" value="Zapnout Minecraft PE">
+        <br>
+        <input type="button" value="Změnit skin">
+        <button>Zapnout Minecraft PE button</button>
+        <button  type="button">EZ Button</button>
+        <br>
+        <button type="reset">
+            <b>Reset</b>
+            <br>
+            <img src="img/oldManUnderConstruction.gif" width="50" alt="OldManWorking">
+        </button>
+    </fieldset>
+</form>
+</body>
+</html>

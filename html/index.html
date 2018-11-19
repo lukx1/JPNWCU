@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="font-family: 'Lucida Console',monospace">
+<p>
+<h5>1102</h5>
+<br>
+down vote
+<br>
+<h1 title="Text">accepted</h1>
+
+<br>
+<a href="galerie.html">Galerie</a>
+<a href="http://sssvt.cz" target="_blank">Wah</a><br>
+<a href="kontakt.html">Kontakt</a>
+<a href="#konec">Konec</a>
+<br>
+<figure>
+    <a href="http://github.com/lukx1/Backupper">
+        <img src="img/b3_256.ico" alt="Nejlepší program světa" title="Backupper">
+    </a>
+    <br>
+    <img title="Starý můž, pracující" width="500" src="img/oldManUnderConstruction.gif"
+         alt="Old man under construction"><br>
+    <figcaption>Starý muž, pracující - 1973 Autor neznámý</figcaption>
+</figure>
+<img width="999" height="999" src="img/Brit.png"><br>
+<a download href=img/Brit.png>Tohle neni koala</a>
+I have &nbsp created a static utility method which can do the job VERY solidly, provided you call it from an Activity.
+
+public static void hideKeyboard(Activity activity) {
+InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+//Find the currently focused view, so we can grab the correct window token from it.
+View view = activity.getCurrentFocus();
+//If no view currently has focus, create a new one, just so we can grab a window token from it
+if (view == null) {
+view = new View(activity);
+}
+imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+}
+Be aware that this utility method ONLY works when called from an Activity! The above method calls getCurrentFocus of the
+target Activity to fetch the proper window token.
+
+But suppose you want to hide the keyboard from an EditText hosted in a DialogFragment? You can't use the method above
+for that:
+
+hideKeyboard(getActivity()); //won't work
+This won't work because you'll be passing a reference to the Fragment's host Activity, which will have no focused
+control while the Fragment is shown! Wow! So, for hiding the keyboard from fragments, I resort to the lower-level, more
+common, and uglier:
+
+public static void hideKeyboardFrom(Context context, View view) {
+InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
+imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+}
+Below is some additional information gleaned from more time wasted chasing this solution:
+
+About windowSoftInputMode
+
+There's yet another point of contention to be aware of. By default, Android will automatically assign initial focus to
+the first EditText or focusable control in your Activity. It naturally follows that the InputMethod (typically the soft
+keyboard) will respond to the focus event by showing itself. The windowSoftInputMode attribute in AndroidManifest.xml,
+when set to stateAlwaysHidden, instructs the keyboard to ignore this automatically-assigned initial focus.
+
+ctivity
+android:name=".MyActivity"
+android:windowSoftInputMode="stateAlwaysHidden"/>
+Almost unbelievably, it appears to do nothing to prevent the keyboard from opening when you touch the control (unless
+focusable="false" and/or focusableInTouchMode="false" are assigned to the control). Apparently, the windowSoftInputMode
+setting applies only to automatic focus events, not to focus events triggered from touch events.
+
+Therefore, stateAlwaysHidden is VERY poorly named indeed. It should perhaps be called ignoreInitialFocus instead.
+
+Hope this helps.
+
+UPDATE: More ways to get a window token
+
+If there is no focused view (e.g. can happen if you just changed fragments), there are other views that will supply a
+useful window token.
+
+These are alternatives for the above code if (view == null) view = new View(activity); These don't refer explicitly to
+your activity.
+
+Inside a fragment class:
+
+view = getView().getRootView().getWindowToken();
+Given a fragment fragment as a parameter:
+
+view = fragment.getView().getRootView().getWindowToken();
+Starting from your content body:
+
+view = findViewById(android.R.id.content).getRootView().getWindowToken();
+UPDATE 2: Clear focus to avoid showing keyboard again if you open the app from the background
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p>
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+<p id="konec">
+    Add this line to the end of the method:
+    view.clearFocus();
+</p>
+
+
+</body>
+</html>

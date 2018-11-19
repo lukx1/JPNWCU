@@ -1,0 +1,17 @@
+body {
+    background-color: #222222;
+    font-family: "Algerian", serif;
+    color:white;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+h1 {
+    text-shadow: 4px 4px 4px #cccccc;
+}
+
+h1:hover {
+    color:maroon;
+    transition-duration: 300ms;
+    transition-property: color, text-shadow;
+    text-shadow: 4px 4px 4px #3b0006;
+}
