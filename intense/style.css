@@ -1,0 +1,557 @@
+body {
+    padding: 0;
+    margin:0;
+    font-family: "Myriad Pro", serif;
+}
+
+hr {
+    border:0;
+    border-bottom: 1px solid orange;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 6px;
+}
+
+.Col {
+    height: 100%;
+    float:left;
+}
+
+#TopBar {
+    font-size: 90%;
+    padding: 2px;
+    display: block;
+    height: auto;
+    float:left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#TopBar a {
+    color:black;
+    text-decoration: none;
+}
+
+#TopBar #TopBarMail {
+    display: inline-block;
+    float:left;
+}
+
+#TopBar #TopBarTel {
+    display: inline-block;
+    margin-right: 6px;
+    float:right;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+#HeadHolder {
+    width: 100%;
+    float:left;
+    text-align: center;
+}
+
+#HeadHolder img {
+    margin-bottom: 6px;
+}
+
+#HeadHolder nav {
+    display: grid;
+    float:left;
+    width:100%;
+    box-sizing: border-box;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#HeadHolder nav a {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 6px;
+    padding: 6px;
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+#SearchBar {
+    width: 100%;
+    text-align: center;
+    background: black url("podklady/slide-01-1920x640.jpg") center center no-repeat;
+    background-size: cover;
+    float:left;
+    padding-bottom: 40px;
+}
+
+#SearchBar h1 {
+    color:white;
+}
+
+#SearchBar form input[type="search"]{
+    background-color: white;
+    border-radius: 5px;
+    height: 2em;
+    border: 1px solid gray;
+    padding: 2px 2px 2px 6px;
+}
+
+#SearchBar form button {
+    color:white;
+    background-color: orange;
+    border-radius: 5px;
+    height: 2em;
+    border: 1px solid orange;
+}
+
+#Browse div h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#Browse {
+    text-align: center;
+    width:100%;
+    float:left;
+    padding: 16px;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
+    box-sizing: border-box;
+}
+
+#Browse div {
+    padding: 20px 2px;
+    color:white;
+    background: black center center no-repeat;
+    background-size: cover;
+}
+
+#Browse a {
+    color:white;
+    text-decoration: none;
+}
+
+#Browse a:nth-child(1) div{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("podklady/home-img-03-442-280.jpg");
+}
+
+#Browse a:nth-child(2) div{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("podklady/home-img-04-442-280.jpg");
+}
+
+#Browse a:nth-child(3) div{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("podklady/home-img-01-442-280.jpg");
+}
+
+#Browse a:nth-child(4) div{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("podklady/home-img-02-442-280.jpg");
+}
+
+#Browse a div:hover {
+    color:transparent;
+}
+
+#Browse a:nth-child(1) div:hover{
+    background-image:  url("podklady/home-img-03-442-280.jpg");
+}
+
+#Browse a:nth-child(2) div:hover{
+    background-image: url("podklady/home-img-04-442-280.jpg");
+}
+
+#Browse a:nth-child(3) div:hover{
+    background-image: url("podklady/home-img-01-442-280.jpg");
+}
+
+#Browse a:nth-child(4) div:hover{
+    background-image: url("podklady/home-img-02-442-280.jpg");
+}
+
+#NabidkaHolder {
+    width: 100%;
+    float:left;
+}
+
+#NabidkaHolder>h1 {
+    text-align: center;
+    color:gray;
+    margin:0 0 0 4px;
+}
+
+#Nabidky img {
+    width: 100%;
+}
+
+#NabidkaHolder #Nabidky {
+    width:100%;
+    box-sizing: border-box;
+    float:left;
+    display: grid;
+    padding:6px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 6px;
+}
+
+#Nabidky h1 {
+    margin:2px 0;
+    color:orange;
+}
+
+#Nabidky h2 {
+    margin:0 0 2px 2px;
+    color:gray;
+}
+
+#Nabidky article p {
+    margin-top: 2px;
+}
+
+#NabidkaHolder a {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    float:left;
+    text-align: center;
+    background-color: darkorange;
+    border-radius: 4px;
+    color:white;
+}
+
+.CenteringBox {
+    width: 100%;
+    float:left;
+    display: flex;
+    justify-content: center;
+}
+
+.CenteringBox a {
+    font-weight: bold;
+}
+
+#Zkusenosti {
+    float:left;
+    width:100%;
+    margin-bottom: 12px;
+}
+
+#Zkusenosti h1 {
+    color:gray;
+    text-align: center;
+}
+
+#ZakaznikHolder {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+}
+
+#ZakaznikHolder>div {
+    min-height: 84px;
+    width:100%;
+}
+
+#ZakaznikHolder>div img {
+    display: inline-block;
+    float:left;
+    height: 100%;
+    padding-right: 10px;
+}
+
+#ZakaznikHolder>div p {
+    display: inline;
+}
+
+#ZakaznikHolder>div h2{
+    color:gray;
+    margin:6px 6px 0 6px;
+    font-size: 125%;
+    display: inline;
+    float: right;
+}
+
+footer {
+    color:white;
+    padding: 20px 32px;
+    margin-top:20px;
+    background: #222;
+    width:100%;
+    float:left;
+    box-sizing: border-box;
+}
+
+footer>div {
+    width:80%;
+    margin-right: 20%;
+}
+
+#Newsettler>h2 {
+    margin:0 0 4px 0;
+}
+
+#Newsettler>p {
+    margin: 0 0 8px 0;
+}
+
+#Newsettler button {
+    cursor: pointer;
+    background-color: orange;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    height: 2em;
+    box-sizing: border-box;
+}
+
+#Newsettler input {
+    padding-left: 6px;
+    min-width:60%;
+    height: 2em;
+    border:none;
+    background: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#Linky h3 {
+    margin-bottom: 2px;
+}
+
+#Linky ul {
+    margin-top:10px;
+}
+
+#Linky ul li {
+    margin-top: 10px;
+}
+
+#Linky li {
+    color:orange;
+}
+
+#Linky ul li:first-line, #Linky ul li:first-letter {
+    color:white;
+}
+
+#Linky ul li a {
+    color:white;
+    text-decoration: none;
+}
+
+#Linky ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+#Novinky h2{
+    margin-bottom: 2px;
+}
+
+#NovinkyGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 6px;
+}
+
+#NovinkyGrid div {
+    margin-bottom: 2px;
+}
+
+#NovinkyGrid h5 {
+    margin:2px 0;
+    color:gray;
+}
+
+#NovinkyGrid article p {
+    margin:0;
+}
+
+#CopyRight {
+    color:gray;
+    font-size: 80%;
+    text-align: right;
+    margin-top:30px;
+}
+
+form input::placeholder {
+    color:black;
+}
+
+hr.GrayBr {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+
+    hr.GrayBr, #TopBar, #HeadHolder, main #Browse, #NabidkaHolder {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #TopBarMail::before {
+        content: "";
+        display:inline-block;
+        height:18px;
+        width:18px;
+        margin-right: 10px;
+        background: transparent url("podklady/mail.png") bottom center no-repeat ;
+        background-size: cover;
+    }
+
+    #TopBarTel::before {
+        content: "";
+        display:inline-block;
+        height:18px;
+        width:18px;
+        margin-right: 10px;
+        background: transparent url("podklady/tele.png") bottom center no-repeat ;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 250%;
+        font-weight: bolder;
+    }
+
+    #TopBar {
+        font-size: 100%;
+        margin-bottom: 12px;
+    }
+
+    #HeadHolder nav {
+        display: flex;
+        width:auto;
+        float:right;
+        align-items: baseline;
+    }
+
+    #HeadHolder img:first-child{
+        float:left;
+        margin:0 2px;
+    }
+
+    #HeadHolder nav a:first-child {
+        margin-left: 0;
+    }
+
+    #HeadHolder nav a:hover {
+        border-bottom: 2px solid orange;
+    }
+
+    #HeadHolder nav a {
+        font-size: 150%;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        box-sizing: border-box;
+        display: inline;
+        margin-bottom: 6px;
+        padding: 6px;
+        text-decoration: none;
+        float:right;
+        color:black;
+        background-color: transparent;
+        border-radius: 0;
+
+        font-weight: bold;
+        margin-left:40px;
+    }
+
+    main #SearchBar form button {
+        font-size: 80%;
+    }
+
+    main #SearchBar form input {
+        font-size: 80%;
+    }
+
+    main #SearchBar {
+        font-size:150%;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
+        flex-direction: column;
+        height: 600px;
+    }
+
+    main #Browse {
+        padding: 0;
+        margin-top:20px;
+        margin-bottom:20px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #Browse div {
+        padding: 40px 2px;
+        color:white;
+        background: black center center no-repeat;
+        background-size: cover;
+    }
+
+    #NabidkaHolder #Nabidky {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 12px;
+        grid-column-gap: 12px;
+    }
+
+    #NabidkaHolder #Nabidky img {
+        max-height: 300px;
+    }
+
+    .CenteringBox a {
+        font-weight: normal;
+        font-size: 125%;
+    }
+
+    #Zkusenosti {
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #Zkusenosti #ZakaznikHolder{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: 1fr;
+    }
+
+    #Zkusenosti #ZakaznikHolder img {
+        min-height: 80px;
+    }
+
+    footer {
+        padding-right: 15%;
+        padding-left: 15%;
+        display: grid;
+        grid-template-rows: 80% 20%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer h2, footer h3 {
+        margin-top: 0;
+    }
+}

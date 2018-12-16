@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivestyle.css">
 </head>
 <body>
     <header>
-        <img width="50" src="img/mlogo.png" alt="Logo">
-        <div><a href="#">Home</a><a href="#">Novinky</a><a href="#">O Nás</a><a href="#">Katalog</a><a href="#">Kontakt</a></div>
+        <a href="index.html"><img width="50"  src="img/mlogo.png" alt="Logo"></a>
+        <div id="TopNavHolder"><a href="index.html">Home</a><a href="#NovinkyNadpis">Novinky</a><a href="#ONasPravo">O Nás</a><a href="katalog.php">Katalog</a><a href="#FooterHolder">Kontakt</a></div>
         <div id="HlavniNadpis">
             <h1>Furniture Shop</h1>
             <h3>Pro Každého něco máme</h3>
@@ -36,7 +37,7 @@
         </div>
     </header>
     <main>
-        <h1>Novinky</h1>
+        <h1 id="NovinkyNadpis">Novinky</h1>
         <div id="ColHolder">
             <div><img src="img/bed3.jpg" alt="Postel"></div>
             <div>
@@ -73,7 +74,7 @@
                     <h1>O nás</h1>
                     <p>Et velit pretium ante tempus pretium libero consequat dui lobortis tortor. Sed tincidunt libero id lacus nunc at augue quis Vestibulum In. Elit neque Vestibulum Nullam est amet mi commodo Phasellus Curabitur Sed. Dictumst egestas malesuada mauris condimentum Donec Vestibulum Vestibulum nec enim at. Elit Phasellus mattis vitae Suspendisse et lacinia nunc enim pede Lorem. Fusce lacus in consectetuer Vestibulum risus metus cursus aliquet Aliquam natoque. Et montes.</p>
                 </article>
-                <a href="onas.html">Více >></a>
+                <a href="necoViceONas.html">Více >></a>
             </div>
         </div>
     </main>
@@ -98,16 +99,18 @@
                     <form action="kontaktform.php">
                         <input placeholder="Zadejte své jméno" type="text" id="Name" name="Name" required><br>
                         <input placeholder="Zadejte zprávu"  type="text" id="Message" name="Message" required><br>
-                        <button type="submit">Odeslat</button>
+                        <div id="ButtonHolder">
+                            <button type="submit">Odeslat</button>
+                        </div>
                     </form>
                 </div>
                 <nav>
                     <h3>Navigace</h3>
-                    <a href="#">Home</a><br>
-                    <a href="#">Novinky</a><br>
-                    <a href="#">O Nás</a><br>
-                    <a href="#">Katalog</a><br>
-                    <a href="#">Kontakt</a><br>
+                    <a href="index.html">Home</a><br>
+                    <a href="#NovinkyNadpis">Novinky</a><br>
+                    <a href="#ONasPravo">O Nás</a><br>
+                    <a href="katalog.php">Katalog</a><br>
+                    <a href="#FooterHolder">Kontakt</a>
                 </nav>
         </div>
     </footer>
